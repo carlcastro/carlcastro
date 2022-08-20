@@ -13,19 +13,19 @@ from webdriver_manager.chrome import ChromeDriverManager
 ​
 # Login not required for Tock. Leave it as false to decrease reservatin delay
 ENABLE_LOGIN = False
-TOCK_USERNAME = "kgduong@uci.edu"
-TOCK_PASSWORD = "03AllenIverson$"
+TOCK_USERNAME = "carlandrewcastro@gmail.com"
+TOCK_PASSWORD = "IVjBuTBt@7n725FQ"
 ​
 # Set your specific reservation month and days
-RESERVATION_MONTH = 'August'
-RESERVATION_DAYS = ['23', '24', '25']
+RESERVATION_MONTH = 'September'
+RESERVATION_DAYS = ['6', '8', '10']
 RESERVATION_YEAR = '2022'
 RESERVATION_TIME_FORMAT = "%I:%M %p"
 ​
 # Set the time range for acceptable reservation times.
 # I.e., any available slots between 5:00 PM and 8:30 PM
-EARLIEST_TIME = "3:00 PM"
-LATEST_TIME = "8:30 PM"
+EARLIEST_TIME = "4:00 PM"
+LATEST_TIME = "9:30 PM"
 RESERVATION_TIME_MIN = datetime.strptime(EARLIEST_TIME, RESERVATION_TIME_FORMAT)
 RESERVATION_TIME_MAX = datetime.strptime(LATEST_TIME, RESERVATION_TIME_FORMAT)
 ​
@@ -45,11 +45,11 @@ REFRESH_DELAY_MSEC = 500
 # Enable proxy to avoid getting IP potentially banned. This should be enabled only if the REFRESH_DELAY_MSEC
 # is extremely low (sub hundred) and NUM_THREADS > 1.
 ENABLE_PROXY = False
-USER_DATA_DIR = '/Users/kietduon/Downloads/chrome/'
+USER_DATA_DIR = '/Users/carlcastro/Downloads/chrome/'
 PROFILE_DIR = 'Default'
 # https://chrome.google.com/webstore/detail/luminati/efohiadmkaogdhibjbmeppjpebenaool
 # EXTENSION_PATH = USER_DATA_DIR + '/' + PROFILE_DIR + '/Extensions/efohiadmkaogdhibjbmeppjpebenaool/1.149.316_0'
-EXTENSION_PATH = "/Users/kietduon/Downloads/chromedriver"
+EXTENSION_PATH = "/Users/carlcastro/Downloads/chromedriver"
 ​
 # Delay for how long the browser remains open so that the reservation can be finalized. Tock holds the reservation
 # for 10 minutes before releasing.
